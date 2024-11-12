@@ -31,6 +31,7 @@ header h1 {
     font-size: 1.8em;
 }
 
+/* Navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -86,4 +87,71 @@ footer {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+/* Media Queries para responsividade */
+
+/* Ajustes para tablets e telas médias */
+@media (max-width: 768px) {
+    /* Reduzindo o espaçamento do container */
+    .container {
+        width: 90%;
+        padding: 0 1em;
+    }
+
+    /* Ajustando o cabeçalho para layout em coluna */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Ajustando o tamanho do título e do menu */
+    header h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    /* Reduzindo o tamanho da fonte dos títulos e do texto */
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    section h3 {
+        font-size: 1.3em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    /* Ajustando o padding e a largura do container para telas menores */
+    .container {
+        width: 95%;
+        padding: 0 0.5em;
+    }
 }

@@ -1,0 +1,89 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções do conteúdo */
+section {
+    padding: 2em 0;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+section h2 {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+section h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Contêiner centralizado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
